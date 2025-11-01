@@ -2,36 +2,36 @@ package module07._1parts;
 
 public class Riddle
 {
-   // write 2 instance variables for Riddle's question and answer: private type variableName;
+   // variable initialization
+   private String Question;
+   private String Answer;   
    
-   
-   // constructor
+   // object constructor
    public Riddle(String initQuestion, String initAnswer)
    {
-      // set the instance variables to the init parameter variables
-   
+      Question = initQuestion;
+      Answer = initAnswer;
    }
    
    // Print riddle question
    public void printQuestion()
    {
-     // print out the riddle question with System.out.println
-     
+     System.out.println(Question);
    }
    
    // Print riddle answer
    public void printAnswer()
    {
-     // print out the riddle answer with System.out.println
-     
+     System.out.println(Answer);
    }
    
    // main method for testing
    public static void main(String[] args)
    {
-      // call the constructor to create 2 new Riddle objects
-      
-      // call their printQuestion() and printAnswer methods
-     
+      // call the constructor to create new Riddle object
+      Riddle Q1 = new Riddle("I have no hinge, latch nor lid, yet inside golden treasure's hid. What am I?", "An Egg!");
+      // call Q1's print method
+       Q1.printQuestion();
+       Q1.printAnswer();
    }
 }
