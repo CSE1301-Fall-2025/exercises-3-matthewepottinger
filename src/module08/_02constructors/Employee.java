@@ -20,8 +20,12 @@ public class Employee extends Person
    
    public static void main(String[] args)
    {
-      Employee emp = new Employee("Dani");
-      System.out.println(emp.getName());
-      System.out.println(emp.getId());
+      Employee emp1 = new Employee("Dani");
+      System.out.println(emp1.getName());
+      System.out.println(emp1.getId());
+
+      Employee emp2 = new Employee("Matthew");
+      System.out.println(emp2.getName());
+      System.out.println(emp2.getId());
    }
 }
